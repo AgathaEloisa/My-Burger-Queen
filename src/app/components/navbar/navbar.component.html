@@ -1,0 +1,20 @@
+  <mat-toolbar>
+    <button mat-icon-button class="icon-btn" aria-label="menu" (click)="snav.toggle()">
+      <mat-icon class="icon-menu">menu</mat-icon>
+    </button>
+    <h1>Burger Queen</h1>
+  </mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #snav>
+  <mat-nav-list>
+    <a mat-list-item [routerLink]="['home']">inicio</a>
+    <mat-divider></mat-divider>
+    <a mat-list-item [routerLink]="['ready-orders']">Pedidos Listos</a>
+  </mat-nav-list>
+  </mat-sidenav>-
+
+  <mat-sidenav-content class="content-screen">
+    <app-views></app-views>
+  </mat-sidenav-content>
+  </mat-sidenav-container>

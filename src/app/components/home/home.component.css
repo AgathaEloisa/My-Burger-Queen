@@ -1,0 +1,21 @@
+.template {
+  height: 100%;
+  background-color: #FFEBEE;
+}
+
+mat-grid-tile {
+  margin-top: 10em;
+}
+
+.menu-home-btn {
+  height: 60%;
+  width: 6em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: .2em;
+  background-color: #5F4339;
+  color: #ffffff;
+}

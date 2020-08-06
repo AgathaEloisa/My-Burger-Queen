@@ -1,0 +1,56 @@
+mat-toolbar {
+  height: 10%;
+  font-size: 20em;
+  padding: 0%;
+}
+
+mat-toolbar, .icon-btn {
+  background-color: #8D6E63;
+  color: #FFEBEE;
+}
+
+.icon-btn {
+  border: none;
+}
+
+.icon-menu {
+  font-size: 7.25em;
+  width: 1em;
+  height: 100%;
+}
+
+mat-toolbar h1 {
+  font-size: .21em;
+  margin-bottom: .2em;
+}
+
+.sidenav-container {
+  height: 90%;
+}
+
+mat-sidenav {
+  background-color: #CCB9BC;
+  width: 60%;
+  text-align: center;
+}
+
+mat-nav-list a:first-child {
+  padding-top: 2.5em;
+}
+
+mat-nav-list a {
+  font-size: 2.7em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  padding-left: 10%;
+}
+
+.content-screen {
+  background-color: #BE9C91;
+}
+
+mat-nav-list mat-divider {
+  width: 80%;
+  border-bottom: .2em solid black;
+  margin-left: 10%;
+}
