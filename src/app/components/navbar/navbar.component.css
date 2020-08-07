@@ -4,13 +4,14 @@ mat-toolbar {
   padding: 0%;
 }
 
-mat-toolbar, .icon-btn,  .title a{
+mat-toolbar, .icon-btn, .title a{
   background-color: #8D6E63;
   color: #FFEBEE;
 }
 
 .icon-btn {
   border: none;
+  color: #ffffff;
 }
 
 .icon-menu {

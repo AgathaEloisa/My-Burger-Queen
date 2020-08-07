@@ -12,11 +12,13 @@ import { environment } from '../environments/environment';
 /* Angular Material */
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-/* import { MatMenuModule } from '@angular/material/menu'; */
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 
 /* Component */
 import { AppComponent } from './app.component';
@@ -25,6 +27,8 @@ import { WaiterComponent } from './components/waiter/waiter.component';
 import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { ViewsComponent } from './components/views/views.component';
 import { HomeComponent } from './components/home/home.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { CheckComponent } from './components/check/check.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,9 @@ import { HomeComponent } from './components/home/home.component';
     WaiterComponent,
     KitchenComponent,
     ViewsComponent,
-    HomeComponent
+    HomeComponent,
+    MenuComponent,
+    CheckComponent
   ],
   imports: [
     BrowserModule,
@@ -42,12 +48,13 @@ import { HomeComponent } from './components/home/home.component';
     AngularFireModule.initializeApp(environment.firebase),
     MatToolbarModule,
     MatIconModule,
-/*     MatMenuModule, */
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

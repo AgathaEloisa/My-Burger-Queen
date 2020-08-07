@@ -1,14 +1,14 @@
 <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <!-- OrderColumn -->
-  <ng-container matColumnDef="order">
+  <ng-container matColumnDef="order" class="kk">
     <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.order}} </mat-cell>
+    <mat-cell class="position" *matCellDef="let element"> {{element.order}} </mat-cell>
   </ng-container>
 
   <!-- Client Column -->
   <ng-container matColumnDef="client">
-    <mat-header-cell *matHeaderCellDef> Client </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{element.client}} </mat-cell>
+    <mat-header-cell class="client-title" *matHeaderCellDef> Client </mat-header-cell>
+    <mat-cell class="client" *matCellDef="let element"> {{element.client}} </mat-cell>
   </ng-container>
 
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
