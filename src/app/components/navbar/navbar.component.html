@@ -1,9 +1,20 @@
+
+<!-- <mat-grid-list cols="5" rowHeight="100px"> -->
   <mat-toolbar>
-    <button mat-icon-button class="icon-btn" aria-label="menu" (click)="snav.toggle()">
-      <mat-icon class="icon-menu">menu</mat-icon>
-    </button>
-    <h1>Burger Queen</h1>
+ <!--    <mat-grid-tile [colspan]="1"> -->
+      <button mat-icon-button class="icon-btn"
+      aria-label="menu"
+      (click)="snav.toggle()">
+        <mat-icon class="icon-menu">menu</mat-icon>
+      </button>
+<!--     </mat-grid-tile>
+    <mat-grid-tile [colspan]="3"> -->
+    <div class="title">
+      <a [routerLink]="['home']">Burger Queen</a>
+    </div>
+<!--     </mat-grid-tile> -->
   </mat-toolbar>
+<!-- </mat-grid-list> -->
 
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #snav>
