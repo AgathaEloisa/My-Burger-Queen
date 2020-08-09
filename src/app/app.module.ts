@@ -19,7 +19,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
 
-
 /* Component */
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -29,6 +28,7 @@ import { ViewsComponent } from './components/views/views.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CheckComponent } from './components/check/check.component';
+import { ReadyOrdersComponent } from './components/ready-orders/ready-orders.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,8 @@ import { CheckComponent } from './components/check/check.component';
     ViewsComponent,
     HomeComponent,
     MenuComponent,
-    CheckComponent
+    CheckComponent,
+    ReadyOrdersComponent
   ],
   imports: [
     BrowserModule,

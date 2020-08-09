@@ -1,4 +1,23 @@
-.app-menu,.app-check {
-  width: 100%;
-  border: .1em solid black;
+.menu-container {
+/*   padding: 6% 2% 0em 3%; */
+padding-top: 6%;
+display: grid;
+grid-gap: .5em;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(3, auto);
+}
+
+.app-menu, .app-check {
+ width: 100%;
+grid-column: span 12;
+}
+
+@media (min-width: 700px){
+  .app-menu {
+    grid-column: span 4;
+  }
+
+  .app-check {
+    grid-column: 6/13;
+  }
 }
