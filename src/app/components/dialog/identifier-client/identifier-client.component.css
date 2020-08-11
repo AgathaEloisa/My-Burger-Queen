@@ -1,0 +1,38 @@
+.identifier-container {
+  text-align: center;
+}
+
+.close-x {
+  text-align: right;
+}
+
+.close-x button{
+  background-color: #FFEBEE;
+  border: none;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.mat-dialog-content input {
+  height: 2em;
+  width: 80%;
+  font-size: larger;
+  border: .1em solid #5F4339;
+}
+
+.mat-dialog-actions {
+  text-align: center;
+/*   display: flex; */
+  justify-content: center;
+/*   align-items: center; */
+}
+
+.mat-dialog-actions button {
+  width: 5em;
+  height: 1.65em;
+  font-size: 1.2em;
+  background-color: #5F4339;
+  color: #FFFFFF;
+  border: none;
+  border-radius: .1em;
+}

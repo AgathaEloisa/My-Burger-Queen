@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +18,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 /* Component */
 import { AppComponent } from './app.component';
@@ -29,6 +30,8 @@ import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CheckComponent } from './components/check/check.component';
 import { ReadyOrdersComponent } from './components/ready-orders/ready-orders.component';
+import { IdentifierClientComponent } from './components/dialog/identifier-client/identifier-client.component';
+import { OrderComponent } from './components/dialog/order/order.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { ReadyOrdersComponent } from './components/ready-orders/ready-orders.com
     HomeComponent,
     MenuComponent,
     CheckComponent,
-    ReadyOrdersComponent
+    ReadyOrdersComponent,
+    IdentifierClientComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,9 @@ import { ReadyOrdersComponent } from './components/ready-orders/ready-orders.com
     MatGridListModule,
     MatTableModule,
     MatDialogModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,15 @@
+<div class="identifier-container">
+  <div class="close-x">
+  <button mat-button (click)="onNoClick()">X</button>
+</div>
+  <h1 mat-dialog-title>Nombre del cliente</h1>
+  <div mat-dialog-content>
+  <!--   [(ngModel)]="data.animal"
+  -->    <input matInput/>
+  </div>
+  <div mat-dialog-actions>
+  <!--   [mat-dialog-close]="data.animal"
+    cdkFocusInitial
+  -->  <button mat-button mat-dialog-close>Enviar</button>
+  </div>
+</div>

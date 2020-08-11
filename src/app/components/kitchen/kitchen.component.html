@@ -8,7 +8,7 @@
   <!-- Client Column -->
   <ng-container matColumnDef="client">
     <mat-header-cell class="client-title" *matHeaderCellDef> Client </mat-header-cell>
-    <mat-cell class="client" *matCellDef="let element"> {{element.client}} </mat-cell>
+    <mat-cell class="client" *matCellDef="let element" (click)="openDialog()"> {{element.client}} </mat-cell>
   </ng-container>
 
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

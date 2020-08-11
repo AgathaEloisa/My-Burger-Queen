@@ -1,4 +1,6 @@
+import { OrderComponent } from './../dialog/order/order.component';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 export interface PeriodicElement {
   order: number;
@@ -18,12 +20,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class KitchenComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
     displayedColumns: string[] = ['order', 'client'];
     dataSource = ELEMENT_DATA;
 
-
+    // tslint:disable-next-line: typedef
+    openDialog() {
+      this.dialog.open(OrderComponent, {
+        data: {
+          animal: 'panda'
+        }
+      });
+    }
   ngOnInit(): void {
   }
 

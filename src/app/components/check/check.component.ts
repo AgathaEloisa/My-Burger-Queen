@@ -1,11 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+/* Dialog */
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { IdentifierClientComponent } from '../dialog/identifier-client/identifier-client.component';
 
 @Component({
   selector: 'app-check',
   templateUrl: './check.component.html',
   styleUrls: ['./check.component.css']
 })
-export class CheckComponent implements OnInit {
+export class CheckComponent {
+/* Dialog */
+  animal: string;
+  name: string;
+
+  /* Table */
   displayedColumns: string[] = ['item', 'cost'];
 /*   transactions: Transaction[]  */
   transactions = [
@@ -17,14 +25,22 @@ export class CheckComponent implements OnInit {
     {item: 'Swim suit', cost: 15},
   ];
 
-  /** Gets the total cost of all transactions. */
   // tslint:disable-next-line: typedef
   getTotalCost() {
     return this.transactions.map(t => t.cost).reduce((acc, value) => acc + value, 0);
   }
-  constructor() { }
 
-  ngOnInit(): void {
+
+  /* Dialog */
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open( IdentifierClientComponent, {
+      width: '30em',
+      height: '15em',
+      panelClass: 'dialog-identifier-client',
+      data: {name: this.name, animal: this.animal}
+    });
   }
 
 }
