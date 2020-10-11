@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 /* Dialog */
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { IdentifierClientComponent } from '../dialog/identifier-client/identifier-client.component';
 
 @Component({
@@ -43,4 +43,15 @@ export class CheckComponent {
     });
   }
 
+  /* send to db */
+
+/* let client = firebase.firestore();
+
+client.collection('client').add({
+    Name:'',
+    order: {}
+  })
+   catch(function(err) {
+      console.log(err)
+   }) */
 }
